@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+    color: white;
+}
+header {
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.hero {
+    background: url('minecraft_background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 4em;
+    margin: 0;
+}
+.hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+.hero a {
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #ff8c00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+.section {
+    padding: 50px;
+    text-align: center;
+}
+.about, .projects, .contact {
+    background-color: #333;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.projects {
+    background-color: #444;
+}
+.card {
+    background-color: #555;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: calc(33% - 40px); /* Adjust width for responsive design */
+    box-sizing: border-box;
+}
+.download-btn {
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+    .card {
+        width: calc(50% - 40px); /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .card {
+        width: calc(100% - 40px); /* Full width for very small screens */
+    }
+    .contact form {
+        text-align: center;
+    }
+}
